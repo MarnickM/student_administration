@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\CourseOverview;
+use App\Livewire\LivewireCourse;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,4 +26,4 @@ Route::middleware([
     })->name('dashboard');
 });
 Route::view('/', 'home')->name('home');
-Route::view('courses', 'courses')->name('courses');
+Route::get('courses', LivewireCourse::class)->name('courses');

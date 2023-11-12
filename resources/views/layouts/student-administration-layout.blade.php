@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/alpinejs" defer></script>
+{{--    <script src="https://unpkg.com/alpinejs" defer></script>--}}
     <meta name="description" content="{{ $description ?? 'Welcome to student administration application' }}">
     <title>{{ $title ?? 'Student Administration Application' }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
