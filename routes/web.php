@@ -25,5 +25,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::middleware(['auth'])->get('profile')->name('profile');
 Route::view('/', 'home')->name('home');
 Route::get('courses', LivewireCourse::class)->name('courses');
